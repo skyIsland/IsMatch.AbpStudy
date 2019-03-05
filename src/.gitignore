@@ -1,0 +1,9 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# IDEs and editors
+.vs/
+obj/
+bin/
+abpstudy-aspnet-core/src/IsMatch.AbpStudy.Web.Host/App_Data/Logs/
+abpstudy-aspnet-core/src/IsMatch.AbpStudy.Web.Mvc/App_Data/Logs/
+abpstudy-aspnet-core/src/IsMatch.AbpStudy.Migrator/Logs/Logs.txt

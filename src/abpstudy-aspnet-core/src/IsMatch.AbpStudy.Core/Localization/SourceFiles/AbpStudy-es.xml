@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="es">
+  <texts>
+    <text name="HomePage" value="P??gina de inicio" />
+    <text name="About" value="Acerca de" />
+    <text name="WellcomeMessage" value="Bienvenido a WMS!" />
+
+    <text name="FormIsNotValidMessage" value="Formulario no es v??lido. Por favor, compruebe y corrija los errores." />
+    <text name="TenantNameCanNotBeEmpty" value="Nombre de la empresa no puede estar vac??o" />
+
+    <text name="InvalidUserNameOrPassword" value="Usuario o contrase??a invalido" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="No hay empresa definida con el nombre {0}" />
+    <text name="TenantIsNotActive" value="La empresa {0} no est?? activa." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="El usuario {0} no est?? activo y no puede conectarse." />
+    <text name="PleaseEnterLoginInformation" value="Por favor, introduzca la informaci??n de inicio de sesi??n" />
+    <text name="TenancyName" value="Nombre de la empresa" />
+    <text name="UserNameOrEmail" value="Nombre de usuario o correo electr??nico" />
+    <text name="Password" value="Contrase??a" />
+    <text name="RememberMe" value="Recu??rdame" />
+    <text name="LogIn" value="Iniciar sesi??n" />
+
+    <text name="LoginFailed" value="??Error de inicio de sesion!" />
+
+    <text name="NameSurname" value="Nombre Apellido" />
+    <text name="UserName" value="Nombre de usuario" />
+    <text name="Name" value="Nombre" />
+    <text name="Surname" value="Apellido" />
+    <text name="EmailAddress" value="Direcci??n de correo electr??nico" />
+
+    <text name="Tenants" value="Empresas" />
+    <text name="SavedSuccessfully" value="Guardado correctamente" />
+    <text name="CreateNewTenant" value="Crear nueva empresa" />
+    <text name="AdminEmailAddress" value="Direcci??n de correo electr??nico del administrador" />
+    <text name="Save" value="Guardar" />
+    <text name="Cancel" value="Cancelar" />
+    <text name="TenantName_Regex_Description" value="El nombre de la empresa debe ser de al menos 2 caracteres, empieza con una letra y continua con una letra, n??mero, gui??n o un gui??n bajo." />
+    <text name="DefaultPasswordIs" value="La contrase??a por defecto es {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Puede estar vac??a para iniciar la sesi??n como anfitri??n." />
+    <text name="Register" value="Registro" />
+    <text name="OrLoginWith" value="o iniciar sesi??n con" />
+    <text name="WaitingForActivationMessage" value="Su cuenta est?? en espera de ser activada por el administrador del sistema." />
+    <text name="TenantSelection" value="Selecci??n de Empresa" />
+    <text name="TenantSelection_Detail" value="Por favor seleccione una de las siguientes empresas." />
+    <text name="Logout" value="Cerrar sesi??n" />
+
+  </texts>
+</localizationDictionary>
