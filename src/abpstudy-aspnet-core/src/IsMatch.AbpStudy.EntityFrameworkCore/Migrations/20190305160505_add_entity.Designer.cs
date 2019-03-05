@@ -4,14 +4,16 @@ using IsMatch.AbpStudy.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IsMatch.AbpStudy.Migrations
 {
     [DbContext(typeof(AbpStudyDbContext))]
-    partial class AbpStudyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190305160505_add_entity")]
+    partial class add_entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -661,7 +663,7 @@ namespace IsMatch.AbpStudy.Migrations
 
                     b.Property<string>("Value")
                         .IsRequired()
-                        .HasMaxLength(500);
+                        .HasMaxLength(67108864);
 
                     b.HasKey("Id");
 
@@ -1058,64 +1060,6 @@ namespace IsMatch.AbpStudy.Migrations
                     b.ToTable("AbpTenants");
                 });
 
-            modelBuilder.Entity("IsMatch.AbpStudy.PhoneBooks.Persons.Person", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Address")
-                        .HasMaxLength(200);
-
-                    b.Property<DateTime>("CreationTime");
-
-                    b.Property<long?>("CreatorUserId");
-
-                    b.Property<long?>("DeleterUserId");
-
-                    b.Property<DateTime?>("DeletionTime");
-
-                    b.Property<string>("EmailAddress")
-                        .HasMaxLength(200);
-
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<DateTime?>("LastModificationTime");
-
-                    b.Property<long?>("LastModifierUserId");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Persons");
-                });
-
-            modelBuilder.Entity("IsMatch.AbpStudy.PhoneBooks.PhoneNumbers.PhoneNumber", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreationTime");
-
-                    b.Property<string>("Number")
-                        .IsRequired()
-                        .HasMaxLength(11);
-
-                    b.Property<int>("PersonId");
-
-                    b.Property<int>("Type");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PersonId");
-
-                    b.ToTable("PhoneNumbers");
-                });
-
             modelBuilder.Entity("Abp.Application.Features.EditionFeatureSetting", b =>
                 {
                     b.HasBaseType("Abp.Application.Features.FeatureSetting");
@@ -1283,14 +1227,6 @@ namespace IsMatch.AbpStudy.Migrations
                     b.HasOne("IsMatch.AbpStudy.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
-                });
-
-            modelBuilder.Entity("IsMatch.AbpStudy.PhoneBooks.PhoneNumbers.PhoneNumber", b =>
-                {
-                    b.HasOne("IsMatch.AbpStudy.PhoneBooks.Persons.Person", "Person")
-                        .WithMany("PhoneNumbers")
-                        .HasForeignKey("PersonId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Abp.Application.Features.EditionFeatureSetting", b =>

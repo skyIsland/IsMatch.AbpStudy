@@ -3,6 +3,9 @@ using Abp.Zero.EntityFrameworkCore;
 using IsMatch.AbpStudy.Authorization.Roles;
 using IsMatch.AbpStudy.Authorization.Users;
 using IsMatch.AbpStudy.MultiTenancy;
+using IsMatch.AbpStudy.PhoneBooks.Persons;
+using IsMatch.AbpStudy.PhoneBooks.PhoneNumbers;
+using Abp.Localization;
 
 namespace IsMatch.AbpStudy.EntityFrameworkCore
 {
@@ -13,6 +16,18 @@ namespace IsMatch.AbpStudy.EntityFrameworkCore
         public AbpStudyDbContext(DbContextOptions<AbpStudyDbContext> options)
             : base(options)
         {
+        }
+
+        public DbSet<Person> Persons { get; set; }
+
+        public DbSet<PhoneNumber> PhoneNumbers { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ApplicationLanguageText>().Property(p => p.Value).HasMaxLength(500);
+
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
