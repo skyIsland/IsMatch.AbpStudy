@@ -7,7 +7,7 @@
   <nz-spin [nzSpinning]="!tenant">
     <form nz-form #validateForm="ngForm" (ngSubmit)="save()" *ngIf="tenant">
 
-      <!-- ???????????? -->
+      <!-- 租户名称 -->
       <nz-form-item>
         <nz-form-control nzHasFeedback>
           <input nz-input name="tenancyName" #tenancyName="ngModel" [(ngModel)]="tenant.tenancyName" [placeholder]="l('TenancyName')"
@@ -18,7 +18,7 @@
         </nz-form-control>
       </nz-form-item>
 
-      <!-- ?????? -->
+      <!-- 名称 -->
       <nz-form-item>
         <nz-form-control nzHasFeedback>
           <input nz-input name="name" #name="ngModel" [(ngModel)]="tenant.name" [placeholder]="l('Name')" required>
@@ -28,14 +28,14 @@
         </nz-form-control>
       </nz-form-item>
 
-      <!-- ?????? -->
+      <!-- 激活 -->
       <nz-form-control>
         <label nz-checkbox name="isActive" [(ngModel)]="tenant.isActive">{{l("IsActive")}}</label>
       </nz-form-control>
 
 
 
-      <!-- ???????????? -->
+      <!-- 功能按钮 -->
       <div class="modal-footer">
         <button nz-button type="button" [disabled]="saving" (click)="close()">
           {{l("Cancel")}}

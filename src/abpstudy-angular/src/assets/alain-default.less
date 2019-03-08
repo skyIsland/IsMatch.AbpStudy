@@ -1298,7 +1298,7 @@ this.tinycolor = tinycolor;
 .tinyColorMixin();
 
 // We create a very complex algorithm which take the place of original tint/shade color system
-// to make sure no one can understand it ????
+// to make sure no one can understand it 👻
 // and create an entire color palette magicly by inputing just a single primary color.
 // We are using bezier-curve easing function and some color manipulations like tint/shade/darken/spin
 .colorPaletteMixin() {
@@ -2311,7 +2311,7 @@ darker  @grey-9;
 @overflows:     auto, hidden;
 @positions:     static, relative, absolute, fixed, sticky;
 
-// ??????
+// 文本
 @text-xs:       @font-size-base - 2; // 12px
 @text-sm:       @font-size-base + 0; // 14px
 @text-md:       @font-size-base + 2; // 16px
@@ -2323,7 +2323,7 @@ darker  @grey-9;
 @icon-md:       @font-size-base * 4; // 48px
 @icon-lg:       @font-size-base * 6; // 72px
 
-// ??????
+// 宽度
 @widths:
     sm @layout-gutter * 20, // 160px
     md @layout-gutter * 30, // 240px
@@ -2339,7 +2339,7 @@ darker  @grey-9;
     90 90%,
     100 100%;
 
-// ??????
+// 圆角
 @border-radius-md:       @border-radius-base; // 4px
 @border-radius-lg:       @border-radius-base + 2px; // 6px
 
@@ -2360,7 +2360,7 @@ darker  @grey-9;
 // ==========
 
 // font-size
-// https://ant.design/docs/spec/font-cn#??????
+// https://ant.design/docs/spec/font-cn#字号
 @font-size-large:         @font-size-base + 8;  // 20px
 @font-size-small:         @font-size-base;      // 12px
 
@@ -2388,9 +2388,9 @@ darker  @grey-9;
 @modal-sm:                    300px;
 
 @preserve-white-spaces-enabled:     true;
-// ??????????????????
+// 搜索框与表格
 @preserve-sf-and-st-spaces:         @layout-gutter * 2;
-// ?????????
+// 按钮间
 @preserve-buttons-spaces:           @layout-gutter;
 
 // table
@@ -3709,7 +3709,7 @@ this.tinycolor = tinycolor;
 .tinyColorMixin();
 
 // We create a very complex algorithm which take the place of original tint/shade color system
-// to make sure no one can understand it ????
+// to make sure no one can understand it 👻
 // and create an entire color palette magicly by inputing just a single primary color.
 // We are using bezier-curve easing function and some color manipulations like tint/shade/darken/spin
 .colorPaletteMixin() {
@@ -5748,42 +5748,42 @@ mark {
   }
 }
 
-// x?????????
+// x轴原点
 .@{ant-prefix}-row-flex-start {
   justify-content: flex-start;
 }
 
-// x?????????
+// x轴居中
 .@{ant-prefix}-row-flex-center {
   justify-content: center;
 }
 
-// x????????????
+// x轴反方向
 .@{ant-prefix}-row-flex-end {
   justify-content: flex-end;
 }
 
-// x?????????
+// x轴平分
 .@{ant-prefix}-row-flex-space-between {
   justify-content: space-between;
 }
 
-// x?????????????????????
+// x轴有间隔地平分
 .@{ant-prefix}-row-flex-space-around {
   justify-content: space-around;
 }
 
-// ????????????
+// 顶部对齐
 .@{ant-prefix}-row-flex-top {
   align-items: flex-start;
 }
 
-// ????????????
+// 居中对齐
 .@{ant-prefix}-row-flex-middle {
   align-items: center;
 }
 
-// ????????????
+// 底部对齐
 .@{ant-prefix}-row-flex-bottom {
   align-items: flex-end;
 }
@@ -7581,14 +7581,14 @@ a.@{btn-prefix-cls} {
   .slick-prev {
     left: -25px;
     &:before {
-      content: "???";
+      content: "←";
     }
   }
 
   .slick-next {
     right: -25px;
     &:before {
-      content: "???";
+      content: "→";
     }
   }
 
@@ -8278,7 +8278,7 @@ a.@{btn-prefix-cls} {
 
 .antCheckboxFn(@checkbox-prefix-cls: ~"@{ant-prefix}-checkbox") {
   @checkbox-inner-prefix-cls: ~"@{checkbox-prefix-cls}-inner";
-  // ????????????
+  // 一般状态
   .@{checkbox-prefix-cls} {
     .reset-component;
     white-space: nowrap;
@@ -8360,7 +8360,7 @@ a.@{btn-prefix-cls} {
     }
   }
 
-  // ????????????
+  // 半选状态
   .@{checkbox-prefix-cls}-indeterminate .@{checkbox-inner-prefix-cls}:after {
     @indeterminate-width: @checkbox-size - 8px;
     @indeterminate-height: @checkbox-size - 8px;
@@ -8379,7 +8379,7 @@ a.@{btn-prefix-cls} {
     border-color: @disabled-color;
   }
 
-  // ????????????
+  // 选中状态
   .@{checkbox-prefix-cls}-checked .@{checkbox-inner-prefix-cls}:after {
     transform: rotate(45deg) scale(1);
     position: absolute;
@@ -9066,7 +9066,7 @@ a.@{btn-prefix-cls} {
   .@{ant-prefix}-form-split {
     color: @text-color;
   }
-  // ??????????????????????????????
+  // 输入框的不同校验状态
   .@{ant-prefix}-input {
     &,
     &:hover {
@@ -9312,7 +9312,7 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-// ?????????????????????????????????: ?????????
+// 表单下的输入框尺寸唯一: 大尺寸
 form {
   .has-feedback {
     .@{ant-prefix}-input {
@@ -12371,7 +12371,7 @@ form {
   line-height: unset;
 }
 
-// ????????????
+// 一般状态
 .@{radio-prefix-cls}-wrapper {
   .reset-component;
   display: inline-block;
@@ -12459,7 +12459,7 @@ form {
   }
 }
 
-// ????????????
+// 选中状态
 .@{radio-prefix-cls}-checked {
   .@{radio-inner-prefix-cls} {
     border-color: @radio-dot-color;
@@ -14036,7 +14036,7 @@ span.@{radio-prefix-cls} + * {
       display: block;
       text-align: center;
       margin-top: 8px;
-      // icon????????????+??????icon????????????content??????????????????????????????icon
+      // icon左边距离+一半icon宽度，是content一半的宽度，垂直对齐icon
       width: (@steps-icon-size / 2 + 36px) * 2;
     }
     &-icon {
@@ -17515,7 +17515,7 @@ span.@{radio-prefix-cls} + * {
     left: 7px;
 
     &:after {
-      content: '??';
+      content: '«';
     }
   }
 
@@ -17525,7 +17525,7 @@ span.@{radio-prefix-cls} + * {
     right: 7px;
 
     &:after {
-      content: '??';
+      content: '»';
     }
   }
 
@@ -17533,7 +17533,7 @@ span.@{radio-prefix-cls} + * {
     left: 29px;
 
     &:after {
-      content: '???';
+      content: '‹';
     }
   }
 
@@ -17541,7 +17541,7 @@ span.@{radio-prefix-cls} + * {
     right: 29px;
 
     &:after {
-      content: '???';
+      content: '›';
     }
   }
 }
@@ -18828,7 +18828,7 @@ span.@{radio-prefix-cls} + * {
 @router-animation-duration: 1s;
 
 // https://github.com/angular/angular/issues/9845
-// ???????????????????????????????????????
+// 一种路由切换动画的简单实现
 app-layout router-outlet + * {
   display: block;
   animation-duration: @router-animation-duration;
@@ -18992,7 +18992,7 @@ app-layout router-outlet + * {
   }
 }
 
-// ?????????????????????????????????????????????????????????????????????
+// 自定义模态框时非常有用，主要运用于查看、编辑页
 .modal {
   &-header {
     padding: 16px 24px;
@@ -19184,7 +19184,7 @@ fieldset {
 }
 
 // widgets
-// ????????????
+// 中心元素
 @abs-enabled: true;
 
 .widget-abs-mixin(@enabled) when(@enabled=true) {
@@ -19444,7 +19444,7 @@ fieldset {
 }
 .scrollbar-mixin(@scrollbar-enabled);
 
-// ?????????div scrollbar
+// 自定义div scrollbar
 @scrollbar-prefix: ~'.scrollbar';
 
 .scrollbar-style-mixin(@scrollbar-prefix);
@@ -19550,7 +19550,7 @@ fieldset {
   .optional {
     color: rgba(0, 0, 0, 0.45);
   }
-  // ?????? label
+  // 固定 label
   &-fixed {
     display: flex !important;
     nz-form-control,
@@ -20915,7 +20915,7 @@ body {
       text-align: center;
     }
   }
-  // ????????????????????????????????????????????????????????? `nz-card` ?????????????????????????????????????????????????????? `mb-md` ?????????
+  // 清除页码底部间距，在大部分列表中会包裹 `nz-card` 导致底部间距过大，若有需求可自行使用 `mb-md` 来调整
   .ant-table-pagination.ant-pagination {
     margin-bottom: 0;
   }
@@ -22154,5 +22154,5 @@ g2-tag-cloud {
 
 /* You can add global styles to this file, and also import other style files */
 
-// ???????????? https://ng-alain.github.io/ng-alain/ ????????????????????????
+// 可以通过 https://ng-alain.github.io/ng-alain/ 获取主题参数代码
 // The theme paraments can be generated at https://ng-alain.github.io/ng-alain/

@@ -23,7 +23,7 @@ const COMPONENTS = [
   ],
 })
 
-/**????????????????????? */
+/**自定义组件模块 */
 export class CustomComponentModule {
   static forRoot(): ModuleWithProviders {
     return { ngModule: CustomComponentModule };

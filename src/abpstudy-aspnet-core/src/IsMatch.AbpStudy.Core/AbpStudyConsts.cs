@@ -6,19 +6,15 @@ namespace IsMatch.AbpStudy
 
         public const string ConnectionStringName = "Default";
 
-        public const bool MultiTenancyEnabled = false;
+        public const bool MultiTenancyEnabled = true;
 
-        /// <summary>
-        /// 邮件地址最大长度
-        /// </summary>
+        /// <summary> 邮件地址最大长度 </summary>
         public const int MaxEmailAddressLength = 200;
 
-        /// <summary>
-        /// 名字最大长度
-        /// </summary>
+        /// <summary> 名字最大长度 </summary>
         public const int MaxNameLength = 50;
 
-
+        /// <summary> 地址最大长度 </summary>
         public const int MaxAddressLength = 200;
     }
 }

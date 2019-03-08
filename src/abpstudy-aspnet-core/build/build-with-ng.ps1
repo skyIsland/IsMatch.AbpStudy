@@ -11,7 +11,7 @@ $ngFolder = Join-Path $buildFolder "../../angular"
 Remove-Item $outputFolder -Force -Recurse -ErrorAction Ignore
 New-Item -Path $outputFolder -ItemType Directory
 
-## RESTORE IsMatchET PACKAGES #####################################################
+## RESTORE NUGET PACKAGES #####################################################
 
 Set-Location $slnFolder
 dotnet restore

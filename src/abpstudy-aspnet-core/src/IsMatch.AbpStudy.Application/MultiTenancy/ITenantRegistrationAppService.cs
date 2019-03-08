@@ -9,7 +9,7 @@ namespace IsMatch.AbpStudy.MultiTenancy
     public interface ITenantRegistrationAppService
     {
         /// <summary>
-        /// ??????????????????
+        /// 注册租户信息
         /// </summary>
         /// <param name="Input"></param>
         /// <returns></returns>

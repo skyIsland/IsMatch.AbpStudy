@@ -1,17 +1,17 @@
 import { Menu } from '@delon/theme';
 
-// ???????????????????????????
+// 全局的左侧导航菜单
 export class AppMenus {
     // new
     static Menus: Menu[] = [
         {
-            text: "",// ????????????????????????
-            i18n: "HomePage",// ???????????????(ABP?????????)
-            acl: "",// ??????
-            icon: { type: "icon", value: "home" },// ??????
-            link: "/app/home", // url ??????
-            // hide: true,  // ????????????
-            // ...?????????????????????????????? Menu??????
+            text: "",// 无本地化显示字符
+            i18n: "HomePage",// 本地化主键(ABP本地化)
+            acl: "",// 权限
+            icon: { type: "icon", value: "home" },// 图标
+            link: "/app/home", // url 地址
+            // hide: true,  // 强制隐藏
+            // ...还有更多选项，请查看 Menu成员
         },
         {
             text: "",
@@ -44,35 +44,35 @@ export class AppMenus {
     ];
     // old
     // static Menus = [
-    //     // ??????
+    //     // 首页
     //     new MenuItem(
     //         'HomePage',
     //         '',
     //         'anticon anticon-home',
     //         '/app/home'
     //     ),
-    //     // ??????
+    //     // 租户
     //     new MenuItem(
     //         'Tenants',
     //         'Pages.Tenants',
     //         'anticon anticon-team',
     //         '/app/tenants',
     //     ),
-    //     // ??????
+    //     // 角色
     //     new MenuItem(
     //         'Roles',
     //         'Pages.Roles',
     //         'anticon anticon-safety',
     //         '/app/roles',
     //     ),
-    //     // ??????
+    //     // 用户
     //     new MenuItem(
     //         'Users',
     //         'Pages.Users',
     //         'anticon anticon-user',
     //         '/app/users',
     //     ),
-    //     // ????????????
+    //     // 关于我们
     //     new MenuItem(
     //         'About',
     //         '',

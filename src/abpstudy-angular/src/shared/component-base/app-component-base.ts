@@ -26,7 +26,7 @@ export abstract class AppComponentBase {
   titleSrvice: TitleService;
 
   /**
-   * ????????????
+   * 保存状态
    */
   saving = false;
 

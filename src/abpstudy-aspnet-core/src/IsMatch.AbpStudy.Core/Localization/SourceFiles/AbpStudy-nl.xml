@@ -42,7 +42,7 @@
     <text name="OrLoginWith" value="Of log in met" />
     <text name="WaitingForActivationMessage" value="Je account dient nog te worden geactiveerd door de beheerder." />
     <text name="TenantSelection" value="Huurder selectie" />
-    <text name="TenantSelection_Detail" value="Selecteer ????n van onderstaande huurders." />
+    <text name="TenantSelection_Detail" value="Selecteer één van onderstaande huurders." />
     <text name="Logout" value="Uitloggen" />
 
     <text name="RegisterFormUserNameInvalidMessage">Voer a.u.b. geen e-mailadres in als gebruikersnaam.</text>

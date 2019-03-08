@@ -35,11 +35,11 @@
           <nz-badge *ngIf="item.isActive" [nzStatus]="'success'" [nzText]="l('Yes')"></nz-badge>
           <nz-badge *ngIf="!item.isActive" [nzStatus]="'default'" [nzText]="l('No')"></nz-badge>
         </td>
-        <td>{{item.creationTime| _date: 'YYYY???MM???DD???'}}</td>
+        <td>{{item.creationTime| _date: 'YYYY年MM月DD日'}}</td>
         <td>
-          <a (click)="edit(item)">??????</a>
+          <a (click)="edit(item)">编辑</a>
           <nz-divider nzType="vertical"></nz-divider>
-          <a (click)="delete(item)">??????</a>
+          <a (click)="delete(item)">删除</a>
         </td>
       </tr>
     </tbody>

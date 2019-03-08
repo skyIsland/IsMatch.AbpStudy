@@ -7,7 +7,7 @@
 
   <form nz-form #validateForm="ngForm" (ngSubmit)="save()">
 
-    <!-- ???????????? -->
+    <!-- 角色名称 -->
     <nz-form-item>
       <nz-form-control nzHasFeedback>
         <input nz-input name="name" #name="ngModel" [(ngModel)]="role.name" [placeholder]="l('Name')" required>
@@ -17,7 +17,7 @@
       </nz-form-control>
     </nz-form-item>
 
-    <!-- ?????????????????? -->
+    <!-- 角色展示名称 -->
     <nz-form-item>
       <nz-form-control nzHasFeedback>
         <input nz-input name="displayName" #displayName="ngModel" [(ngModel)]="role.displayName" [placeholder]="l('DisplayName')"
@@ -28,19 +28,19 @@
       </nz-form-control>
     </nz-form-item>
 
-    <!-- ???????????? -->
+    <!-- 角色介绍 -->
     <nz-form-item>
       <nz-form-control>
         <input nz-input name="description" [(ngModel)]="role.description" [placeholder]="l('RoleDescription')">
       </nz-form-control>
     </nz-form-item>
 
-    <!-- ????????? -->
+    <!-- 权限组 -->
     <nz-form-item>
       <nz-checkbox-group name="permissions" [(ngModel)]="permissionList" *ngIf="permissionList.length!=0"></nz-checkbox-group>
     </nz-form-item>
 
-    <!-- ???????????? -->
+    <!-- 功能按钮 -->
     <div class="modal-footer">
       <button nz-button type="button" [disabled]="saving" (click)="close()">
         {{l("Cancel")}}

@@ -9,7 +9,7 @@
   <form nz-form #validateForm="ngForm" (ngSubmit)="save()" *ngIf="user">
     <nz-tabset>
       <nz-tab [nzTitle]="l('UserDetails')">
-        <!-- ???????????? -->
+        <!-- 用户账号 -->
         <nz-form-item>
           <nz-form-control nzHasFeedback>
             <input nz-input name="userName" #userName="ngModel" [(ngModel)]="user.userName" [placeholder]="l('UserName')">
@@ -19,7 +19,7 @@
           </nz-form-control>
         </nz-form-item>
 
-        <!-- ??? / ?????? -->
+        <!-- 名 / 姓名 -->
         <nz-form-item>
           <nz-col [nzSpan]="12">
             <nz-form-control nzHasFeedback>
@@ -41,7 +41,7 @@
           </nz-col>
         </nz-form-item>
 
-        <!-- ?????? -->
+        <!-- 邮箱 -->
         <nz-form-item>
           <nz-form-control nzHasFeedback>
             <input nz-input name="emailAddress" #emailAddress="ngModel" [(ngModel)]="user.emailAddress" [placeholder]="l('EmailAddress')"
@@ -53,7 +53,7 @@
           </nz-form-control>
         </nz-form-item>
 
-        <!-- ?????? -->
+        <!-- 密码 -->
         <nz-form-item>
           <nz-form-control nzHasFeedback>
             <input nz-input name="password" #password="ngModel" [(ngModel)]="user.password" [placeholder]="l('Password')"
@@ -67,7 +67,7 @@
           </nz-form-control>
         </nz-form-item>
 
-        <!-- ???????????? -->
+        <!-- 确认密码 -->
         <nz-form-item>
           <nz-form-control nzHasFeedback>
             <input nz-input name="confirmPassword" #confirmPasswordInput='ngModel' [(ngModel)]="confirmPassword"
@@ -80,7 +80,7 @@
           </nz-form-control>
         </nz-form-item>
 
-        <!-- ?????? -->
+        <!-- 激活 -->
         <nz-form-item>
           <label nz-checkbox name="isActive" [(ngModel)]="user.isActive">{{l('IsActive')}}</label>
         </nz-form-item>
@@ -96,7 +96,7 @@
 
 
 
-    <!-- ???????????? -->
+    <!-- 功能按钮 -->
     <div class="modal-footer">
       <button nz-button type="button" [disabled]="saving" (click)="close()">
         {{l("Cancel")}}

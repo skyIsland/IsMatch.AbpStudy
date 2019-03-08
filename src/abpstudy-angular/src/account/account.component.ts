@@ -26,11 +26,11 @@ export class AccountComponent extends AppComponentBase {
       href: '',
     },
     {
-      title: '??????',
+      title: '隐私',
       href: '',
     },
     {
-      title: '??????',
+      title: '条款',
       href: '',
     },
   ];

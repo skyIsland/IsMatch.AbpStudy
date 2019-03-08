@@ -150,7 +150,7 @@ publish/
 # in these scripts will be unencrypted
 PublishScripts/
 
-# IsMatchet Packages
+# NuGet Packages
 *.nupkg
 # The packages folder can be ignored because of Package Restore
 **/packages/*
@@ -158,9 +158,9 @@ PublishScripts/
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
-# IsMatchet v3's project.json files produces more ignoreable files
-*.IsMatchet.props
-*.IsMatchet.targets
+# NuGet v3's project.json files produces more ignoreable files
+*.nuget.props
+*.nuget.targets
 
 # Microsoft Azure Build Output
 csx/

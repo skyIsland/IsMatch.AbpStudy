@@ -22,7 +22,7 @@ const ThirdDirectives = [
 })
 
 
-/**????????????????????? */
+/**自定义指令模块 */
 export class DirectivesModule {
     static forRoot(): ModuleWithProviders {
         return { ngModule: DirectivesModule };

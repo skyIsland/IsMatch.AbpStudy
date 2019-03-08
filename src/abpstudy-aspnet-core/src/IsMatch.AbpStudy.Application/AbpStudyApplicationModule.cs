@@ -2,8 +2,6 @@ using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using IsMatch.AbpStudy.Authorization;
-using IsMatch.AbpStudy.PhoneBooks.PhoneNumbers.Authorization;
-using IsMatch.AbpStudy.PhoneBooks.PhoneNumbers.Mapper;
 
 namespace IsMatch.AbpStudy
 {
@@ -16,13 +14,12 @@ namespace IsMatch.AbpStudy
         {
             Configuration.Authorization.Providers.Add<AbpStudyAuthorizationProvider>();
 
-            Configuration.Authorization.Providers.Add<PhoneNumberAuthorizationProvider>();
-
-            // ×Ô¶¨ÒåÀàÐÍÓ³Éä
+            // è‡ªå®šä¹‰ç±»åž‹æ˜ å°„
             Configuration.Modules.AbpAutoMapper().Configurators.Add(configuration =>
             {
                 // XXXMapper.CreateMappers(configuration);
-                PhoneNumberMapper.CreateMappings(configuration);
+
+
             });
         }
 

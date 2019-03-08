@@ -31,7 +31,7 @@ import { LocalizationService } from '@shared/i18n/localization.service';
 
 export function appInitializerFactory(injector: Injector) {
 
-    // ????????????
+    // 导入图标
     const iconSrv = injector.get(NzIconService);
     iconSrv.addIcon(...ICONS_AUTO, ...ICONS);
 
@@ -93,14 +93,14 @@ const I18NSERVICE_PROVIDES = [
         BrowserAnimationsModule,
         BrowserModule,
         AbpModule,
-        // ??????DelonMdule
+        // 引入DelonMdule
         DelonModule.forRoot(),
         ServiceProxyModule,
         RootRoutingModule,
         HttpClientModule,
-        /** ?????? ng-zorro-antd ?????? **/
+        /** 导入 ng-zorro-antd 模块 **/
         NgZorroAntdModule,
-        /** ???????????? ng-zorro ?????????????????? */
+        /** 必须导入 ng-zorro 才能导入此项 */
         SharedModule.forRoot(),
     ],
     declarations: [RootComponent],

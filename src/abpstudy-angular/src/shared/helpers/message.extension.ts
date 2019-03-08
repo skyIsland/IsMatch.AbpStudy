@@ -2,7 +2,7 @@ import { NzNotificationService, NzModalService, NzMessageService } from "ng-zorr
 
 export class MessageExtension {
     /**
-     * ??????abp.message?????????ng-zorro?????????message
+     * 覆盖abp.message替换为ng-zorro的全局message
      * @param _nzMessageService 
      * @param _nzModalService 
      */
@@ -42,7 +42,7 @@ export class MessageExtension {
     }
 
     /**
-     * ??????abp.message?????????ng-zorro????????????
+     * 覆盖abp.message替换为ng-zorro的模态框
      * @param _nzModalService 
      */
     static overrideAbpMessageByNgModal(_nzModalService: NzModalService) {
@@ -84,7 +84,7 @@ export class MessageExtension {
         abp.message.confirm = this.confirm;
     }
 
-    // ??????abp.message?????????ng-zorro???notify
+    // 覆盖abp.message替换为ng-zorro的notify
     static overrideAbpNotify(_nzNotificationService: NzNotificationService) {
         if ((<any>abp).nzNotify) {
             return;

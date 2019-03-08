@@ -2,86 +2,86 @@
 <localizationDictionary culture="tr">
   <texts>
     <text name="HomePage" value="Ana Sayfa" />
-    <text name="About" value="Hakk??nda" />
-    <text name="WellcomeMessage" value="YoyoCmsTemplate projesine ho??geldiniz!" />
-    <text name="FormIsNotValidMessage" value="Form ge??erli de??il. L??tfen kontrol edip hatalar?? d??zeltin." />
-    <text name="TenantNameCanNotBeEmpty" value="M????teri ad?? bo?? b??rak??lamaz." />
-    <text name="InvalidUserNameOrPassword" value="Kullan??c?? ad?? ya da ??ifre hatal??." />
-    <text name="ThereIsNoTenantDefinedWithName{0}" value="{0} isminde bir m????teri tan??ml?? de??ildir." />
-    <text name="TenantIsNotActive" value="{0} isimli m????teri aktif edilmemi??tir." />
-    <text name="UserIsNotActiveAndCanNotLogin" value="{0} isimli kullan??c?? pasife al??nm????t??r ve sisteme giremez." />
-    <text name="UserEmailIsNotConfirmedAndCanNotLogin">E-posta adresiniz do??rulanmad??, giri?? yapamazs??n??z.</text>
-    <text name="UserLockedOutMessage">Kullan??c?? hesab?? kilitlenmi??. L??tfen bir s??re sonra tekrar deneyin.</text>
-    <text name="PleaseEnterLoginInformation" value="L??tfen giri?? bilgilerinizi girin" />
-    <text name="TenancyName" value="M????teri ad??" />
-    <text name="UserNameOrEmail" value="Kullan??c?? ad?? ya da e-posta" />
-    <text name="Password" value="??ifre" />
-    <text name="RememberMe" value="Beni hat??rla" />
-    <text name="LogIn" value="Giri??" />
-    <text name="LoginFailed" value="Giri?? ba??ar??s??z!" />
+    <text name="About" value="Hakkında" />
+    <text name="WellcomeMessage" value="YoyoCmsTemplate projesine hoşgeldiniz!" />
+    <text name="FormIsNotValidMessage" value="Form geçerli değil. Lütfen kontrol edip hataları düzeltin." />
+    <text name="TenantNameCanNotBeEmpty" value="Müşteri adı boş bırakılamaz." />
+    <text name="InvalidUserNameOrPassword" value="Kullanıcı adı ya da şifre hatalı." />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="{0} isminde bir müşteri tanımlı değildir." />
+    <text name="TenantIsNotActive" value="{0} isimli müşteri aktif edilmemiştir." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="{0} isimli kullanıcı pasife alınmıştır ve sisteme giremez." />
+    <text name="UserEmailIsNotConfirmedAndCanNotLogin">E-posta adresiniz doğrulanmadı, giriş yapamazsınız.</text>
+    <text name="UserLockedOutMessage">Kullanıcı hesabı kilitlenmiş. Lütfen bir süre sonra tekrar deneyin.</text>
+    <text name="PleaseEnterLoginInformation" value="Lütfen giriş bilgilerinizi girin" />
+    <text name="TenancyName" value="Müşteri adı" />
+    <text name="UserNameOrEmail" value="Kullanıcı adı ya da e-posta" />
+    <text name="Password" value="Şifre" />
+    <text name="RememberMe" value="Beni hatırla" />
+    <text name="LogIn" value="Giriş" />
+    <text name="LoginFailed" value="Giriş başarısız!" />
     <text name="NameSurname" value="Ad soyad" />
-    <text name="UserName" value="Kullan??c?? ad??" />
-    <text name="Name" value="??sim" />
+    <text name="UserName" value="Kullanıcı adı" />
+    <text name="Name" value="İsim" />
     <text name="Surname" value="Soy isim" />
     <text name="EmailAddress" value="E-posta adresi" />
-    <text name="Tenants" value="M????teriler" />
-    <text name="SavedSuccessfully" value="Ba??ar??yla kaydedildi" />
-    <text name="CreateNewTenant" value="Yeni m????teri olu??tur" />
-    <text name="AdminEmailAddress" value="Y??netici e-posta adresi" />
+    <text name="Tenants" value="Müşteriler" />
+    <text name="SavedSuccessfully" value="Başarıyla kaydedildi" />
+    <text name="CreateNewTenant" value="Yeni müşteri oluştur" />
+    <text name="AdminEmailAddress" value="Yönetici e-posta adresi" />
     <text name="Save" value="Kaydet" />
-    <text name="Cancel" value="??ptal" />
-    <text name="TenantName_Regex_Description" value="M????teri ad?? en az 2 karakter olmal??, bir harfle ba??lamal?? ve harf, rakam, tire ya da alt ??izgi ile devam etmelidir." />
-    <text name="DefaultPasswordIs" value="Varsay??lan ??ifre {0}" />
-    <text name="CanBeEmptyToLoginAsHost" value="Host olarak giri?? yapmak i??in bo?? b??rak??labilir." />
-    <text name="Register" value="Kay??t ol" />
-    <text name="OrLoginWith" value="Ya da ??ununla giri?? yap" />
-    <text name="WaitingForActivationMessage" value="Hesab??n??z sistem y??neticisi taraf??ndan etkinle??tirilmek i??in bekliyor." />
-    <text name="TenantSelection" value="M????teri se??imi" />
-    <text name="TenantSelection_Detail" value="L??tfen a??a????daki m????terilerden birisini se??in." />
-    <text name="Logout" value="????k????" />
-    <text name="RegisterFormUserNameInvalidMessage">L??tfen kullan??c?? ad?? alan??na e-posta adresi girmeyin.</text>
-    <text name="DatabaseConnectionString" value="Veritaban?? ba??lant?? c??mlesi" />
-    <text name="Users" value="Kullan??c??lar" />
+    <text name="Cancel" value="İptal" />
+    <text name="TenantName_Regex_Description" value="Müşteri adı en az 2 karakter olmalı, bir harfle başlamalı ve harf, rakam, tire ya da alt çizgi ile devam etmelidir." />
+    <text name="DefaultPasswordIs" value="Varsayılan şifre {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Host olarak giriş yapmak için boş bırakılabilir." />
+    <text name="Register" value="Kayıt ol" />
+    <text name="OrLoginWith" value="Ya da şununla giriş yap" />
+    <text name="WaitingForActivationMessage" value="Hesabınız sistem yöneticisi tarafından etkinleştirilmek için bekliyor." />
+    <text name="TenantSelection" value="Müşteri seçimi" />
+    <text name="TenantSelection_Detail" value="Lütfen aşağıdaki müşterilerden birisini seçin." />
+    <text name="Logout" value="Çıkış" />
+    <text name="RegisterFormUserNameInvalidMessage">Lütfen kullanıcı adı alanına e-posta adresi girmeyin.</text>
+    <text name="DatabaseConnectionString" value="Veritabanı bağlantı cümlesi" />
+    <text name="Users" value="Kullanıcılar" />
     <text name="IsActive" value="Etkin mi" />
-    <text name="FullName" value="Tam ad??" />
-    <text name="CreateNewUser" value="Yeni kullan??c?? olu??tur" />
+    <text name="FullName" value="Tam adı" />
+    <text name="CreateNewUser" value="Yeni kullanıcı oluştur" />
     <text name="Yes" value="Evet" />
-    <text name="No" value="Hay??r" />
+    <text name="No" value="Hayır" />
     <text name="Optional" value="Opsiyonel" />
-    <text name="LeaveEmptyToSwitchToHost">??st kullan??c??ya ge??i?? i??in bo?? de??er girin.</text>
-    <text name="CurrentTenant">Ge??erli m????teri</text>
-    <text name="NotSelected">Se??ilmemi??</text>
-    <text name="Change">De??i??tir</text>
-    <text name="ChangeTenant">M????teri de??i??tir</text>
-    <text name="MultiLevelMenu">??ok Seviyeli Men??</text>
+    <text name="LeaveEmptyToSwitchToHost">Üst kullanıcıya geçiş için boş değer girin.</text>
+    <text name="CurrentTenant">Geçerli müşteri</text>
+    <text name="NotSelected">Seçilmemiş</text>
+    <text name="Change">Değiştir</text>
+    <text name="ChangeTenant">Müşteri değiştir</text>
+    <text name="MultiLevelMenu">Çok Seviyeli Menü</text>
     <text name="Back">Geri</text>
-    <text name="SuccessfullyRegistered">Ba??ar??yla kay??t olundu</text>
-    <text name="WaitingForEmailActivation">E-posta adresiniz etkinle??tirilmeli.</text>
+    <text name="SuccessfullyRegistered">Başarıyla kayıt olundu</text>
+    <text name="WaitingForEmailActivation">E-posta adresiniz etkinleştirilmeli.</text>
     <text name="Roles">Roller</text>
-    <text name="DisplayName">G??r??nen ad</text>
-    <text name="Edit">D??zenle</text>
+    <text name="DisplayName">Görünen ad</text>
+    <text name="Edit">Düzenle</text>
     <text name="Delete">Sil</text>
-    <text name="CreateNewRole">Yeni rol olu??tur</text>
-    <text name="RoleName">Rol ad??</text>
-    <text name="Actions">????lemler</text>
-	<text name="CouldNotCompleteLoginOperation">Giri?? i??lemi ba??ar??s??z! L??tfen daha sonra tekrar deneyiniz.</text>
-    <text name="CouldNotValidateExternalUser">Harici kullan??c?? do??rulanamad??!</text>
-    <text name="EditRole">Rol?? d??zenle</text>
-    <text name="EditTenant">M????teri d??zenle</text>
-    <text name="EditUser">Kullan??c?? d??zenleme</text>
-    <text name="TenantIdIsNotActive{0}">M????teri id aktif de??il: {0}</text>
-    <text name="UnknownTenantId{0}">M????teri id aktif de??il: {0}</text>
+    <text name="CreateNewRole">Yeni rol oluştur</text>
+    <text name="RoleName">Rol adı</text>
+    <text name="Actions">İşlemler</text>
+	<text name="CouldNotCompleteLoginOperation">Giriş işlemi başarısız! Lütfen daha sonra tekrar deneyiniz.</text>
+    <text name="CouldNotValidateExternalUser">Harici kullanıcı doğrulanamadı!</text>
+    <text name="EditRole">Rolü düzenle</text>
+    <text name="EditTenant">Müşteri düzenle</text>
+    <text name="EditUser">Kullanıcı düzenleme</text>
+    <text name="TenantIdIsNotActive{0}">Müşteri id aktif değil: {0}</text>
+    <text name="UnknownTenantId{0}">Müşteri id aktif değil: {0}</text>
     <text name="ThisFieldIsRequired">Bu alan zorunludur.</text>
-    <text name="PleaseWait">L??tfen bekleyin...</text>
-    <text name="Administration">Y??netim</text>  
+    <text name="PleaseWait">Lütfen bekleyin...</text>
+    <text name="Administration">Yönetim</text>  
     <text name="ClearAll">Hepsini temizle</text>
-    <text name="ClearOthers">Di??erlerini temizle</text>
-    <text name="LabelOptions">Etikent se??enekleri</text>
+    <text name="ClearOthers">Diğerlerini temizle</text>
+    <text name="LabelOptions">Etikent seçenekleri</text>
 	<text name="Permissions">Yetkiler</text>
-	<text name="RoleDescription">Rol tan??m??</text>
+	<text name="RoleDescription">Rol tanımı</text>
 	<text name="Refresh">Yenile</text>
-	<text name="Create">Olu??tur</text>
-	<text name="UserDetails">Kullan??c?? detaylar??</text>
-	<text name="UserRoles">Kullan??c?? rolleri</text>		
+	<text name="Create">Oluştur</text>
+	<text name="UserDetails">Kullanıcı detayları</text>
+	<text name="UserRoles">Kullanıcı rolleri</text>		
   </texts>
 </localizationDictionary>

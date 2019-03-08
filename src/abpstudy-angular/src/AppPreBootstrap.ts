@@ -19,7 +19,7 @@ export class AppPreBootstrap {
     static run(injector: Injector, callback: () => void): void {
         let httpClient = injector.get(HttpClient);
 
-        console.log("???52ABP????????????,??????????????? https://www.52abp.com");
+        console.log("由52ABP模板构建,详情请访问 https://www.52abp.com");
 
         AppPreBootstrap.getApplicationConfig(httpClient, () => {
             AppPreBootstrap.getUserConfiguration(injector, httpClient, callback);
@@ -72,11 +72,11 @@ export class AppPreBootstrap {
         httpClient.get(url).subscribe((response: any) => {
             let result = response.result;
 
-            // ????????????
+            // 填充数据
             _.merge(abp, result);
 
 
-            // ??????
+            // 时区
             abp.clock.provider = this.getCurrentClockProvider(result.clock.provider);
             moment.locale(abp.localization.currentLanguage.name);
 
@@ -87,17 +87,17 @@ export class AppPreBootstrap {
             }
 
 
-            // ????????????,NG-Zorro???DataPicker?????????
+            // 注册语言,NG-Zorro的DataPicker要使用
             registerLocaleData(zh);
 
 
-            // ??????
+            // 权限
             const permissionService = injector.get(PermissionService);
             permissionService.extend(abp.auth);
-            // ?????????
+            // 本地化
             const localization = injector.get<LocalizationService>(ALAIN_I18N_TOKEN);
             localization.extend(abp.localization);
-            // ????????????
+            // 写入菜单
             const menuService = injector.get(MenuService);
             menuService.add(AppMenus.Menus);
 

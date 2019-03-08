@@ -13,7 +13,4 @@
   <ItemGroup>
     <ProjectReference Include="..\IsMatch.AbpStudy.Core\IsMatch.AbpStudy.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PhoneBooks\Persons\" />
-  </ItemGroup>
 </Project>

@@ -31,13 +31,13 @@ import { AppComponentBase } from '@shared/component-base';
 export class NoDataComponent extends AppComponentBase implements OnInit {
   // region fields
   /**
-   * ????????????
+   * 显示文本
    */
   @Input()
   text: string;
 
   /**
-   * ??????
+   * 图标
    */
   @Input()
   icon = 'anticon anticon-frown-o';

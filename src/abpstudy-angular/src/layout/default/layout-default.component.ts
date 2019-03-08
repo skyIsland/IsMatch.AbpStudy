@@ -104,7 +104,7 @@ import {
         if (evt instanceof NavigationError || evt instanceof NavigationCancel) {
           this.isFetching = false;
           if (evt instanceof NavigationError) {
-            this.message.error(`????????????${evt.url}??????`);
+            this.message.error(`无法加载${evt.url}路由`);
           }
           return;
         }

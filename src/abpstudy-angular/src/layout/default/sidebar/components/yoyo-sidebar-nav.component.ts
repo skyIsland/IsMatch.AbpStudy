@@ -67,7 +67,7 @@ export class YoYoSidebarNavComponent implements OnInit, OnDestroy {
     }
 
     /**
-     * ????????????????????????
+     * 处理菜单展开状态
      */
     processMenuOpen(currentUrl: string, menus: Nav[], parentMenu?: Nav): void {
         menus.forEach(item => {
