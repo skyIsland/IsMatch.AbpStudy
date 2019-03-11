@@ -40,7 +40,6 @@ const routes: Routes = [
       {
         path: 'phonebook',
         component: PersonsComponent,
-        data: { permission: 'Page.Persons' },
         canActivate: [AppRouteGuard],
       },
       {
