@@ -18,6 +18,7 @@ import { EditRoleComponent } from '@app/roles/edit-role/edit-role.component';
 import { CreateUserComponent } from '@app/users/create-user/create-user.component';
 import { EditUserComponent } from '@app/users/edit-user/edit-user.component';
 import { AdvertisingComponent } from './advertising/advertising.component';
+import { PersonsComponent } from './persons/persons.component';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { AdvertisingComponent } from './advertising/advertising.component';
     CreateUserComponent,
     EditUserComponent,
     AdvertisingComponent,
+    PersonsComponent,
   ],
   entryComponents: [
     CreateTenantComponent,

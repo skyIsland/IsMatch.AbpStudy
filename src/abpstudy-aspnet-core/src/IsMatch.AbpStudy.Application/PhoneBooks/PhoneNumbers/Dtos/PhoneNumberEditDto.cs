@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using Abp.Domain.Entities.Auditing;
+using IsMatch.AbpStudy.PhoneBooks.Persons;
 using IsMatch.AbpStudy.PhoneBooks.PhoneNumbers;
 
 namespace  IsMatch.AbpStudy.PhoneBooks.PhoneNumbers.Dtos

@@ -5,6 +5,7 @@ using Abp.Application.Services.Dto;
 using Abp.Domain.Entities.Auditing;
 using System.ComponentModel.DataAnnotations;
 using IsMatch.AbpStudy.PhoneBooks.PhoneNumbers;
+using IsMatch.AbpStudy.PhoneBooks.Persons;
 
 namespace IsMatch.AbpStudy.PhoneBooks.PhoneNumbers.Dtos
 {

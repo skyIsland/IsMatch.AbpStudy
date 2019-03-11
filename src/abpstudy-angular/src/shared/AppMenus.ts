@@ -37,6 +37,13 @@ export class AppMenus {
         },
         {
             text: "",
+            i18n: "PhoneBook",
+            acl: "Pages.Person",
+            icon: { type: "icon", value: "phone" },
+            link: "/app/phonebook",
+        },
+        {
+            text: "",
             i18n: "About",
             icon: { type: "icon", value: "info-circle" },
             link: "/app/about",

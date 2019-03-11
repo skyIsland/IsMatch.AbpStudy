@@ -6,6 +6,7 @@ using IsMatch.AbpStudy.MultiTenancy;
 using IsMatch.AbpStudy.PhoneBooks.Persons;
 using IsMatch.AbpStudy.PhoneBooks.PhoneNumbers;
 using Abp.Localization;
+using IsMatch.AbpStudy.EntityMapper.Persons;
 
 namespace IsMatch.AbpStudy.EntityFrameworkCore
 {
@@ -25,7 +26,7 @@ namespace IsMatch.AbpStudy.EntityFrameworkCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ApplicationLanguageText>().Property(p => p.Value).HasMaxLength(500);
-
+            //modelBuilder.ApplyConfiguration(new PersonCfg());
 
             base.OnModelCreating(modelBuilder);
         }

@@ -8,6 +8,7 @@ import { AboutComponent } from '@app/about/about.component';
 import { TenantsComponent } from '@app/tenants/tenants.component';
 import { RolesComponent } from '@app/roles/roles.component';
 import { UsersComponent } from '@app/users/users.component';
+import { PersonsComponent } from './persons/persons.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,12 @@ const routes: Routes = [
       {
         path: 'users',
         component: UsersComponent,
+        canActivate: [AppRouteGuard],
+      },
+      {
+        path: 'phonebook',
+        component: PersonsComponent,
+        data: { permission: 'Page.Persons' },
         canActivate: [AppRouteGuard],
       },
       {

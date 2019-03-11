@@ -2,6 +2,8 @@ using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using IsMatch.AbpStudy.Authorization;
+using IsMatch.AbpStudy.PhoneBooks.Persons.Authorization;
+using IsMatch.AbpStudy.PhoneBooks.Persons.Mapper;
 
 namespace IsMatch.AbpStudy
 {
@@ -13,13 +15,15 @@ namespace IsMatch.AbpStudy
         public override void PreInitialize()
         {
             Configuration.Authorization.Providers.Add<AbpStudyAuthorizationProvider>();
+            Configuration.Authorization.Providers.Add<PersonAuthorizationProvider>();
+
 
             // 自定义类型映射
             Configuration.Modules.AbpAutoMapper().Configurators.Add(configuration =>
             {
                 // XXXMapper.CreateMappers(configuration);
 
-
+                PersonMapper.CreateMappings(configuration);
             });
         }
 
